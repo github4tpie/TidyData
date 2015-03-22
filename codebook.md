@@ -83,7 +83,7 @@ Given: "https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR
 1. Download and unzip the data set.
 2. Start reading and merging of data files. Merge files in "test" directory with files in the "train" directory. Structure and filenames are identical between both directories.
 3. Merge the training and the test sets to create one data set. x and y are temporary "scratch" objects.
-4. Merge measurements. bigX - Combined test and train data sets.
+4. Merge measurements. bigX is the combined test and train data sets.
      - rows = feature by subject
      - columns = feature
 5. Merge files conataining Activity ID for each observation.
