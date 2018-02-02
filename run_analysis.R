@@ -3,6 +3,7 @@
 library("data.table")
 library("plyr")
 library("dplyr")
+library("readr")
 
 # Download and unzip the data set.
 url <- "http://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip"
@@ -10,7 +11,7 @@ destfile <- "UCI HAR Dataset.zip"
 method <- "curl"
 download.file(url, destfile = destfile, method = "curl")
 # Record date and time of download
-write.file(date(), file = "DateDownloaded.txt")
+write_file(date(), "DateDownloaded.txt")
 unzip(destfile)
 
 # Start reading and merging of data files. Merge files in "test"
